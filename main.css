@@ -66,7 +66,7 @@
       color: #000;
       font-size: 25px;
       font-family: Tahoma;
-      margin-right: 80px;
+      margin: 30px;
       border: 2px solid transparent;
       padding: 10px;
       transition: 0.3s;
@@ -110,23 +110,25 @@
     .about-section p{
       font-size: 30px;
       font-family: roboto;
-      width: 1000px;
+      width: 100%;
       text-align: center;
       margin: 40px auto;
       border:2px solid gray;
-      padding: 15px;
+      padding: 30px;
     }
     .skills-section{
       width:100%;
       height:400pxx;
       background:#9ea0a3;
     text-align: center;
+    padding:10px;
     }
     .skills-section h2{
       text-decoration: underline;
       font-size: 30px;
       font-family: sans-serif;
-      padding-top: 40px;
+      padding: 40px;
+      
     }
     .skills-section img{
       height:200px;
@@ -160,3 +162,84 @@
       color:#000;
       cursor: default;
     }
+
+  .toggle{
+  width:30px;
+  padding: 10px;
+  float:right;
+  background: gray;
+  border-radius: 10px;
+  margin:6px;
+  cursor: pointer;
+  display:none;
+}
+.toggle span{
+  width:100%;
+  height:4px;
+  background-color: #fff;
+  display: block;
+  margin-bottom: 3px;
+}
+@media(max-width:824px){
+  .toggle{
+    display: block;
+    position:fixed;
+  }
+  .navbar{
+    display:none;
+  }
+  .navbar a{
+    display: inline;
+    text-align: center;
+    padding:30px;
+    margin:60px;
+  }
+}
+.about-section p{
+  width:98%;
+  padding: 0;
+  font-size: 20px;
+}
+.skills-section img{
+  height:110px;
+  width:110px;
+  display:block;
+  margin:0 auto;
+}
+/*@media(max-width:411px)
+{
+  .head-content img{
+    width:90%;
+  }
+  .name{
+    font-size: 30px;
+  }
+}*/
+
+
+/*<script type="text/javascript">
+    $(document).ready(function () {
+      $(".toggle").click(function () {
+        $(".navbar").slideToggle();
+      });
+      $(window).resize(function () {
+        if ($(window).width() > 768) {
+          $(".navbar").show();
+        } else {
+          $(".navbar").hide();
+        }
+      });
+    });
+  </script>*/
+
+  /*@media only screen and (min-width:400px){
+    .copyright{
+      background: pink;
+    }
+  }
+  @media only screen and (max-width:800px){
+    .copyright{
+      background: red;
+    }
+  }
+  
