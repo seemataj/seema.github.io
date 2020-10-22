@@ -1,42 +1,113 @@
 * {
+  margin: 0;
+  padding: 0;
+}
+.centerdiv {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  height: 100px;
+  width: 100px;
+  background-color: #f5f6fa;
+  border-radius: 50%;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 1px 4px 2px 2px #dcdde1;
+  line-height: 110px;
+}
+
+a i {
+  transition: all 0.3s linear;
+}
+
+a:hover i {
+  transform: scale(1.8);
+}
+
+
+
+.fa-linkedin {
+  color: #0097e6;
+}
+
+.fa-github {
+  color: #000;
+}
+.fa-envelope-o {
+  color: red;
+}
+
+/*html{
+    scroll-behavior: smooth;
+  }
+  body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }*/
+  .header {
+    background: url(back1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-  .centerdiv {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  a {
-    height: 100px;
-    width: 100px;
-    background-color: #f5f6fa;
-    border-radius: 50%;
+  .navbar {
     text-align: center;
-    margin: 10px;
-    box-shadow: 1px 4px 2px 2px #dcdde1;
-    line-height: 110px;
+    padding:1px;
   }
-  
-  a i {
-    transition: all 0.3s linear;
-  }
-  
-  a:hover i {
-    transform: scale(1.8);
-  }
-  
-  
-  
-  .fa-linkedin {
-    color: #0097e6;
-  }
-  
-  .fa-github {
+  .navbar a {
+    text-decoration: none;
     color: #000;
+    font-size: 25px;
+    font-family: Tahoma;
+    margin: 30px;
+    border: 2px solid transparent;
+    padding: 10px;
+    transition: 0.3s;
   }
+  .navbar a:hover {
+    background: rgb(93, 93, 175);
+    border: 2px solid #fff;
+  }
+  .head-content {
+    text-align: center;
+  }
+  .head-content img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 30px;
+  }
+  .head-content img:hover {
+    border: 2px solid #000;
+  }
+  .name{
+    cursor: pointer;
+    font-size: 50px;
+    color:#fff;
+    font-family: Algerian;
+    margin-top:6px;
+  }
+  .desc{
+    cursor:default;
+    font-size: 30px;
+    color:#fff;
+    font-family: Harlow Solid;
+    margin-top: 6px;
+  }
+  .about-section h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-decoration: underline;
+    margin:30px;
+  }
+<<<<<<< HEAD
   .fa-envelope-o {
     color: red;
   }
@@ -243,3 +314,126 @@
     }
   }
   
+=======
+  .about-section p{
+    font-size: 30px;
+    font-family: roboto;
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+    border:2px solid gray;
+    padding: 30px;
+  }
+  .skills-section{
+    width:100%;
+    height:400pxx;
+    background:#9ea0a3;
+  text-align: center;
+  padding:10px;
+  }
+  .skills-section h2{
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding: 40px;
+    
+  }
+  .skills-section img{
+    height:200px;
+    width:200px;
+    border:2px solid transparent;
+    margin:20px;
+  }
+  .skills-section img:hover{
+    border:2px solid #000;
+    transition: 0.3s;
+  }
+  .contact-section{
+    height:50vh;
+    background: gray;
+    text-align: center;
+    padding:20px;
+    
+  }
+  .contact-section span{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 50px auto;
+  }
+  .copyright{
+    background:transparent;
+    font-size: 20px;
+    height:50px;
+    padding: 10px;
+    text-align: center;
+    color:#000;
+    cursor: default;
+  }
+
+.toggle{
+width:30px;
+padding: 10px;
+float:right;
+background: gray;
+border-radius: 10px;
+margin:6px;
+cursor: pointer;
+display:none;
+}
+.toggle span{
+width:100%;
+height:4px;
+background-color: #fff;
+display: block;
+margin-bottom: 3px;
+}
+@media(width:411px){
+.toggle{
+  display: block;
+  position:fixed;
+}
+.navbar{
+  display:none;
+}
+.navbar a{
+  display: inline;
+  text-align: center;
+  padding:30px;
+  margin:60px;
+}
+}
+.about-section p{
+width:90%;
+padding: 0;
+font-size: 20px;
+}
+.skills-section img{
+height:110px;
+width:110px;
+display:block;
+margin:0 auto;
+}
+/*@media(width:411px)
+{
+.head-content img{
+  width:90%;
+}
+.name{
+  font-size: 30px;
+}
+}*/
+
+
+
+/*@media only screen and (min-width:400px){
+  .copyright{
+    background: pink;
+  }
+}
+@media only screen and (max-width:800px){
+  .copyright{
+    background: red;
+  }
+}
+>>>>>>> e3964f853e8973a115841b1893f1f3c30afe9eee
